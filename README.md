@@ -7,3 +7,12 @@ Project for DLA course at HSE
 * `models/` contains checkpoints that achieved adequate quality
 * `main.ipynb` is where main work happened
 * `report.pdf` is self-naming
+
+## Main result
+`models/student_08.pt` achieved 8.5-fold speedup and 10-fold memory reduction compared to baseline model (`models/baseline_best.pt`). Its quality (`5.3e-5`) is still adequate and satisfies the constraint (`< 5.5e-5`)
+
+I tried following setups:
+* Distillation (around 10 times)
+* Quantization (qint8)
+* Quantization (float16)
+* Distillation + Quantization (qint8)

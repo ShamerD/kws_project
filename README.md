@@ -16,3 +16,11 @@ I tried following setups:
 * Quantization (qint8)
 * Quantization (float16)
 * Distillation + Quantization (qint8)
+
+## Installation
+Everything needed is in notebook, however you need to download data split and models so that it lies near notebook; for example in notebook you could use
+```bash
+!git clone https://github.com/ShamerD/kws_project.git
+!mv kws_project/data/* .
+!mv kws_project/models/* .
+```
